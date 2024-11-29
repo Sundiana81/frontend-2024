@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .animal-gallery {
+    width: 100%;
+    min-height: 900px;
+    padding: 15px 0px;
+    border: 1.5px solid ;
+    /* задаем flex для родителя позиционируемых элементов */
+    display: flex;
+    /* промежуток между flex элементами */
+    gap: 10px;
+    /* центровать flex элементы по главной оси */
+    /* justify-content: center; */
+    /* сместить элементы к правому краю */
+    /* justify-content: end; */
+    /* разделили равномерно свободное пространство между элементами */
+    justify-content: center;
+    /* align-items управляет поведением flex элементов по поперечной оси */
+    align-items: start;
+    /* перенос карточек на новые строки */
+    flex-wrap: wrap;
+    /* отвечает за сгруппированное положение карточек при переносе карточек через flex-wrap */
+    align-content: center;
+  }
+  
+  
+  /* селектор для всех картинки внутри .animal-card */
+  .animal-card > img {
+    width: 300px;
+  }
+  
+  /* селектор для контейнера с данными по животному */
+  .animal-card {
+    display: flex;
+    /* поменяли направление во flex контейнере (теперь главная ось отвечает за вертикаль) */
+    flex-direction: column;
+    /* если изменен flex-direction на column то align-items управляет горизонталью  */
+    align-items: center;
+    /* если изменен flex-direction на column то justify-content управляет вертикалью  */
+    justify-content: start;
+    height: 300px;
+    width: 350px;
+    background-color: bisque;
+  }
+  
+  
+  
+  
+  
+  /* а так можно было бы задать селектор для одной картинки жирафа */
+  /* .giraffe-card > img {
+    width: 400px;
+  } */
+  
