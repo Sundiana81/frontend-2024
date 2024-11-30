@@ -1,0 +1,54 @@
+.grid-container {
+    /* сделал grid контейнер */
+    display: grid;
+    /* пространство между контейнерами */
+    gap: 5px;
+    /* 1fr равен одному 'кусочку', если в схеме их несколько фреймы равны между собой */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: 100px 200px 150px; */
+    /* задаем высоту каждого ряда */
+    grid-auto-rows: 60px;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+  }
+  
+  
+  .grid-container-adaptive {
+    display: grid;
+    /* в функцию repeat() передаем первым аргументом количество колонок, вторым - их размер */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
+    /* первое число - горизонтальный промежуток, второе - вертикальный */
+    /* gap: 5px 20px; */
+    grid-auto-rows: 80px;
+  }
+  
+  .grid-item-adaptive {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightblue; */
+    background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/402/Carina_Nebula-1.jpeg?w=4096&format=jpeg&fit=clip&crop=faces%2Cfocalpoint');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* .yellow-card {
+    background-color: rgb(255, 255, 173)
+  } */
+  
+  h4 {
+    margin: 0;
+  }
+  
+  .img-container {
+    background-image: url('https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg');
+  }
