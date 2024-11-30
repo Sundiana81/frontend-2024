@@ -1,3 +1,21 @@
 a {
+  text-decoration: none;
     color: black;
+  
   }
+  .lesson-container{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    padding: 0px 30px;
+  }
+  h1{
+    color: blue;
+  }
+  
+  a:hover{
+    text-decoration:underline;
+    color: coral;
+  }
+  
