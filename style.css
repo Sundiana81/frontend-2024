@@ -1,21 +1,36 @@
+
+.lesson-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 0px 30px;
+}
+
+h1 {
+  color: coral;
+}
+
 a {
   text-decoration: none;
-    color: black;
-  
-  }
-  .lesson-container{
-    display: flex;
-    flex-direction: column;
-  }
-  main{
-    padding: 0px 30px;
-  }
-  h1{
-    color: blue;
-  }
-  
-  a:hover{
-    text-decoration:underline;
-    color: coral;
-  }
-  
+  color: rgb(19, 17, 17);
+}
+
+/* псевдоэлемент before / after используется для добавления контента до или после элемента (лучше подходит для группы элементов) */
+
+/* каждой ссылке при создании будет добавлять текст из content*/
+.a::before {
+  content: "⚡️ ";
+}
+
+/* стили с псевдоклассом hover применятся к элементу при наведении на него мышкой */
+.lesson-link:hover {
+  text-decoration: underline;
+  color: coral;
+}
+
+.homework-link:hover {
+  text-decoration: underline;
+  color: rgb(16, 196, 70);
+}

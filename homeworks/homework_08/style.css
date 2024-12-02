@@ -48,3 +48,23 @@ h2 {
   text-align: center;
 }
 
+
+/* Эффект наведения */
+nav a:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Стилизация ссылок */
+nav a {
+  display: inline-block;
+  background-color: #4b6b8d;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}

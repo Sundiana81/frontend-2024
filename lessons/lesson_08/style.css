@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* vh - viewport height - высота видимой области браузера */
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: forestgreen;
+  }
+  
+  header {
+    /* vw - viewport width - ширина видимой области браузера */
+    /* width: 80vw; */
+    /* 'приклеиваем' элемент на страницу с помощью position sticky  */
+    position: sticky;
+    /* не забываем добавить значение в пикселях для одной из координат чтобы sticky сработал ( top / left / right / bottom ) */
+    top: 0px;
+    height: 80px;
+    background-color: forestgreen;
+  }
+  
+  main {
+    padding: 0px 30px;
+    /* настройка для flex элемента, чтобы он растянулся по размеру  контейнера родителя */
+    flex: 1;
+  }
+  
+  footer {
+    height: 50px;
+    background-color: lightgray;
+  }
+  
+  .grid-gallery {
+    display: grid;
+    gap: 5px;
+    /* 4 колонки на всех устройствах разной ширины (простой способ) */
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* все элементы внутри grid контейнера будут 80px по высоте */
+    /* grid-auto-rows: 80px; */
+  }
+  
+  .grid-gallery a {
+    color: black;
+    text-decoration: none;
+    /* свойство transform будет плавным на 0.3 секунды*/
+    transition: transform 0.3s ease;
+  }
+  
+  .grid-gallery a:hover {
+    /* увеличивай масштаб на hover на 10% */
+    transform: scale(1.1);
+  }
+  
+  /* если не поставить '>' свойство коснется всех элементов потомков, не только прямых */
+  .grid-gallery section {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  /* рамке-контейнеру для картинки задаем жесткую высоту */
+  .grid-gallery div {
+    height: 120px;
+  }
+  
+  .grid-gallery img {
+    width: 100%;
+    height: 100%;
+    /* задаем картинке правило чтобы она не растягивалась по размеру контейнера а обрезала не попавшие в рамку края */
+    object-fit: cover;
+  }
+  
+  /* эти css свойства сработают на экранах меньше 669px по ширине */
+  @media (max-width: 669px) {
+    header {
+      background-color: rgb(67, 199, 67);
+    }
+  
+    .grid-gallery div {
+      height: 170px;
+    }
+  }
+  
+  /* эти css свойства сработают на экранах меньше 464px по ширине */
+  @media (max-width: 464px) {
+    header {
+      background-color: rgb(162, 248, 162);
+    }
+  
+    .grid-gallery div {
+      height: 200px;
+    }
+  }
