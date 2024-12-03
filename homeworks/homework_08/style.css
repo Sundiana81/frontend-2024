@@ -23,17 +23,21 @@ body {
 }
 .header {
   
-  padding: 20px; /* Внутренний отступ */
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center; /* Вертикальное центрирование */
-  position: sticky;
-    /* не забываем добавить значение в пикселях для одной из координат чтобы sticky сработал ( top / left / right / bottom ) */
-    top: 0px;
-    height: 80px;
-    background-color: rgb(109, 70, 146);
+      width: 100%; /* Убедитесь, что ширина хедера соответствует ширине экрана */
+      background-color: rgb(109, 70, 146);
+      box-sizing: border-box; /* Учитывайте паддинги в общей ширине */
+    }
     
-}
+    @media (max-width: 768px) { /* Настройки для мобильных устройств */
+      .header {
+        flex-direction: column; /* Перенос элементов, если они не помещаются */
+        padding: 10px; /* Добавьте отступы, если нужно */
+      }
+    }
+
 * {
   margin: 0;
   padding: 0;
