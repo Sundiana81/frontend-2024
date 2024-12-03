@@ -23,11 +23,21 @@ body {
   background-position: center;
 }
 .header {
-  background-color: #794444; /* Цвет фона для шапки */
+  
   padding: 20px; /* Внутренний отступ */
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center; /* Вертикальное центрирование */
+  position: sticky;
+    /* не забываем добавить значение в пикселях для одной из координат чтобы sticky сработал ( top / left / right / bottom ) */
+    top: 0px;
+    height: 80px;
+    background-color: rgb(109, 70, 146);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -46,6 +56,16 @@ h2 {
   font-size: 36px;
   color: #ee1212;  /* Черный цвет текста */
   text-align: center;
+}
+footer {
+  background-color: #333;
+  color: rgb(190, 38, 38);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom:0%;
+  width: 100%;
+
 }
 
 
@@ -68,3 +88,7 @@ nav a {
   text-align: center;
   transition: background-color 0.3s, transform 0.3s;
 }
+
+  .grid-gallery div {
+    height: 170px;
+  }
