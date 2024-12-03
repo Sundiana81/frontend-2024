@@ -1,0 +1,63 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: #fff;
+
+}
+.cars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    position: relative;
+
+}
+.cars div{
+    width: 360px;
+    height: 360;
+    background-color: #f8f8f8;
+    margin: 20;
+    outline: 1px solid black;
+    background-image: url("https://subaru.ru/uploads/blocks/resize__320_b693995b9c64825089ebe6f005f6193065c22d2c34ffd.png");
+background-size: 90;
+background-repeat: no-repeat;
+background-position: center;
+transition: .5s;
+
+}
+.cars div :hover{
+    background-size: 150%;
+    background-position: right 120% top 50%;
+    transition: .5s;
+}
+.cars div .desc{
+    position: relative;
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    border-radius: 4px;
+    top:270px;
+    left: 10px;
+    opacity: 0;
+    transition: .5s;
+
+}
+.cars h2{
+    position: relative;
+    top: 270px;
+    left: 20px;
+
+}
+.cars div .descr:hover{
+    background-color: blue;
+    color: #fff;
+}
+.cars div:hover .descr{
+    opacity: 1;
+
+}

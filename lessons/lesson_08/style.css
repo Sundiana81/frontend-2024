@@ -44,7 +44,6 @@ body {
   
   .grid-gallery a {
     color: black;
-    text-decoration: none;
     /* свойство transform будет плавным на 0.3 секунды*/
     transition: transform 0.3s ease;
   }

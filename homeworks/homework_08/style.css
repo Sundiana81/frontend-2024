@@ -17,8 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg');
-  
+  background-image: url('https://www.autoscout24.de/cms-content-assets/4Y47YWAOwYA8rTD9CDULqg-f0661040111ea9a1157519c17dced4ee-rolls-royce-phantom-1100.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -33,11 +32,13 @@ body {
     top: 0px;
     height: 80px;
     background-color: rgb(109, 70, 146);
+    
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 h1 {
@@ -49,22 +50,26 @@ h1 {
   color: #f7f0f0; /* Цвет текста */
   text-align: center; /* Центрирование текста внутри h1 */
   margin: 0; /* Убираем внешние отступы */
+  text-decoration: none;
 }
 
 
 h2 {
   font-size: 36px;
-  color: #ee1212;  /* Черный цвет текста */
+  color: #ee1212;
   text-align: center;
+  text-decoration: none;
 }
 footer {
   background-color: #333;
   color: rgb(190, 38, 38);
   text-align: center;
-  padding: 1rem;
+  padding: 4%;
   position: relative;
   bottom:0%;
   width: 100%;
+  text-decoration: none;
+  border-top: 50px solid #ccc; /* Граница сверху */
 
 }
 
