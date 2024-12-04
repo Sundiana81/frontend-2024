@@ -1,24 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: smaller;
+  font-weight: 500;
+}
+
 header {
-    position: sticky;
-    display: flex;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 30px;
-    gap: 15px;
-    height: 80px;
-    background-color: white;
- 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); 
-  }
+  position: sticky;
+  display: flex;
+  top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  gap: 15px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+.head {
+  display: flex;
+  justify-content: space-between; /* по горизонту разделяем элементы */
+  align-items: center; /* ровняем по центру по вертикали */
+  width: 100%; /* элементы на всю ширину */
+}
 
-  body {
-    margin: 0;
-    display:flex;
-    flex-direction: column;
-    min-height: ;
+nav {
+  display: flex;
+  gap: 15px; /* гэпы между ссылками в навигации */
+}
+.services {
+  display: flex;
+  gap: 10px; /* гэпы между иконками */
+}
 
-  }
+.left_name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* гэпы между ссылками */
+}
 
+.left_name a {
+  color: black;
+}
+
+header a {
+  color: black;
+}
+
+.grid-container-1,
+.grid-container-2,
+.grid-container-3,
+.grid-container-4,
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колоны по 1 фрейму каждая */
+  gap: 20px; /* гэп в 20пксл */
+  padding: 0 200px; /* паддинги */
+  max-width: 1200px; /* лимитируем максимальную ширину в 1200px */
+  margin: 0 auto; /* центруем на странице */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column; /* располагаем элементы вертикально*/
+  justify-content: center; /* центруем */
+  align-items: stretch; /* распределяем элементы по ширине контейнера */
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Устанавливаем максимальную высоту для изображений */
+  object-fit: contain; /* Масштабирует изображение, сохраняя пропорции */
+  margin: 0 auto;
+}
+
+h2 {
+  margin-left: 0;
+  padding-left: 200px; /* отступ слева такой же как у сетки*/
+  text-align: left; /* ровняем текст по левому краю */
+}
+
+.grid-item a {
+  color: blue; /* цвет для ссылки */
+  text-decoration: underline; /* подчеркиваем ссылку */
+  font-size: inherit; /* наследуем размер шрифта родителя */
+  vertical-align: baseline; /* Выравнивание с текстом */
+}
+
+.grid-item h3 {
+  margin: 10px 0 5px; /* Добавляем отступы сверху и снизу */
+  font-size: 16px; /* Устанавливаем размер шрифта для подзаголовка */
+  font-weight: bold; /* жирный текст */
+}
+
+.grid-item p {
+  margin-top: 0; /* Убираем верхний отступ у параграфа */
+}
+
+.links {
+  color: black !important; /* Устанавливаем черный цвет текста */
+  text-decoration: none !important; /* Убираем подчеркивание */
+}
+
+.links:hover {
+  text-decoration: underline !important; /* Добавляем подчеркивание при наведении */
+}
+
+.image_overlay img {
+  max-width: 100%; /* лимитируем ширину изображения размером контейнера */
+  max-height: 100vh; /* лимитируем высоту изображения размером экрана */
+  object-fit: contain; /* сохраняем пропорции */
+}
+
+footer {
+  background-color: #545454;
+  color: white;
+  padding: 40px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px; 
+  margin-left: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
   
+}
+
+.footer-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  
+}
+
+.footer-button:hover {
+  text-decoration: none;
+}
+
+.footer-links {
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-links a:hover{
+  text-decoration: underline;
+}
+
+
+.footer-bottom {
+  margin-top: 0;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  font-family: Arial,sans-serif;
+}

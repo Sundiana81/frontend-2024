@@ -1,0 +1,13 @@
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+}
+
+#btn-change {
+  background-color: rgb(206, 206, 255);
+}
+
+#btn-create {
+  background-color: rgb(255, 206, 215);
+}
