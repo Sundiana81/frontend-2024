@@ -37,3 +37,4 @@ btnCreate.addEventListener("click", () => {
   // применяем метод append к родителю, в скобках передаем один элемент или несколько через запятую
   document.body.append(newElement)
 })
+ 

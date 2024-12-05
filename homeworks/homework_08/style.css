@@ -1,5 +1,5 @@
 body {
-  background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/402/Carina_Nebula-1.jpeg?w=4096&format=jpeg&fit=clip&crop=faces%2Cfocalpoint');
+  background-image: url('https://asset.montecarlosbm.com/styles/hero_desktop_wide_minsize_2x_webp/s3/media/orphea/ca_casino_square_2020_0108.jpg.webp?h=83214b8f&itok=E2zzR3kz');
   background-size: cover; /* Растянуть фон по всему экрану */
   background-position: center; /* Центрировать фон */
 }
@@ -54,7 +54,7 @@ h1 {
   color: #f7f0f0; /* Цвет текста */
   text-align: center; /* Центрирование текста внутри h1 */
   margin: 0; /* Убираем внешние отступы */
-  text-decoration: none;
+ 
 }
 
 
@@ -62,7 +62,7 @@ h2 {
   font-size: 36px;
   color: #ee1212;
   text-align: center;
-  text-decoration: none;
+  
 }
 footer {
   background-color: #333;
@@ -73,7 +73,7 @@ footer {
   bottom:0%;
   width: 100%;
   text-decoration: none;
-  border-top: 50px solid #ccc; /* Граница сверху */
+  /* border-top: 50px solid #ccc;  */
 
 }
 
