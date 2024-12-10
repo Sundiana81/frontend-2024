@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <button id="buttonback" onclick="location.href='../../index.html'">
+        Home
+      </button>
+    
+    
+    <h1 style="text-align: center">AIT Bank</h1>
+    <form>
+    
+      <div>
+        <label for="account">Account number: </label>
+        <input id="account" type="text" placeholder="Enter your account number" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="name">Name: </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="deposit">Enter the amount to deposit:</label>
+        <input
+          id="deposit"
+          type="number"
+          placeholder="Enter the amount"
+          maxlength="6"
+          minlength="1"
+          
+        />
+      </div>
+      
+      <button class = "deposit" type="deposit">Deposit the amount</button>
+        
+      <br />
+      
+
+      <div>
+        <label for="withdraw">Withdraw from the account:</label>
+        <input
+          id="withdraw"
+          type="number"
+          placeholder="Enter the amount to withdraw from the account"
+        />
+      </div>
+      <button  class = "withdraw" type="withdraw">Withdraw from the account</button>
+
+      <br />
+      <br />
+      <br />      
+
+      <button  class = "check" type="check">Check the balance</button>
+      <button class="reset" type="button">Reset</button>
+     
+
+        <div class="display"></div>
+        <br />
+        <p> Available accounts:</p>
+        <li> AA345678/Alice</li>
+        <li> AB764353/Jack</li>
+        <li> CC764539/Don</li>
+    </form>
+
+   
+  </body>
+</html>

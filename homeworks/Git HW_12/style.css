@@ -1,0 +1,68 @@
+
+body {
+    font-family: "Covered By Your Grace";
+    font-weight: 400;
+    font-style: normal;
+    background-color:rgb(244, 243, 250);
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0% auto; 
+    max-width: 400px;
+    padding: 20px; 
+    border: 1px solid #0e0b0b;
+    border-bottom-width: 1px;
+    border-radius: 3%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}  
+
+input[type = "number"],
+input[type = "text"]{
+    width: 100%;
+    border: 1px solid #0e0b0b
+    border-radius 5px;
+    padding: 5px 0px 5px 5px;  
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.deposit {
+    background-color: #32e641;
+}
+
+.withdraw {
+    background-color: #dd3c31;
+}
+
+.check {
+    background-color: #b3acab;
+}
+
+.display {
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #0e0b0b;
+}
+
+#buttonback {
+    width: 100px;
+    position: relative;
+    left: 47%;
+    background-color: bisque;
+}
+
+p, li{font-size: 15px;
+}
+
+.reset { background-color: #b3acab;}
