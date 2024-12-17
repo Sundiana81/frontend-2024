@@ -1,0 +1,28 @@
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .product-card {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px 30px;
+  }
+  
+  .img-wrapper {
+    /* жестко задаем значение для контейнера по вертикали */
+    width: 80%;
+    height: 200px;
+  }
+  
+  .img-wrapper > img {
+    width: 100%;
+    height: 100%;
+    /* задаем contain, чтобы уместить картинку в контейнере */
+    object-fit: contain;
+  }
+  
+  /* .product-card > img {
+    width: 80%;
+  } */

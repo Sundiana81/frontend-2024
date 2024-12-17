@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
-    <title>Homework 18</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    #character {
+      margin-top: 20px;
+    }
+    #character img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    #character p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Fetch requests 🐱‍🚀</h1>
-    <img width="300px" class ="character-img" id="character-img" src="" alt="character-img" >
-    <div>
+  <h1>Rick and Morty Character Info</h1>
+  <label for="character-id">Enter Character ID:</label>
+  <input type="number" id="character-id" placeholder="e.g., 1">
+  <button id="fetch-button">Fetch Character</button>
 
-        <button id="btn2-update">Update character 🐱‍👓</button>
+  <div id="character">
     
-    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

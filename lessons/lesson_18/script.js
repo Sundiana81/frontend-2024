@@ -69,11 +69,14 @@ function getCharacter (){
          // Берем случайного персонажа из списка
         //  const randomCharacter = data2.results[Math.floor(Math.random() * data2.results.length)];
         const character = data2.results[2]
+        
+        
             img2.src = character.image; // устанавливаем источник изображения
             img2.alt = character.name; // устанавливаем альтернативный текст с именем персонажа
     })
     
 }
+getCharacter()
 
 // Добавляем обработчик события на кнопку
 btnUpd.addEventListener('click', getCharacter);
